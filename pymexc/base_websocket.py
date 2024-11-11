@@ -8,7 +8,7 @@ import hmac
 logger = logging.getLogger(__name__)
 
 SPOT = "wss://wbs.mexc.com/ws"
-FUTURES = "wss://contract.mexc.com/ws"
+FUTURES = "wss://contract.mexc.com/edge"
 
 class _WebSocketManager:
     def __init__(self, callback_function, ws_name, api_key=None, api_secret=None,
