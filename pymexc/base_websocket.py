@@ -376,7 +376,7 @@ class _FuturesWebSocketManager(_WebSocketManager):
 class _FuturesWebSocket(_FuturesWebSocketManager):
     def __init__(self, **kwargs):
         self.ws_name = "FuturesV1"
-        self.endpoint = "wss://contract.mexc.com/ws"
+        self.endpoint = "wss://contract.mexc.com/edge"
 
         super().__init__(self.ws_name, **kwargs)
         self.ws = None
